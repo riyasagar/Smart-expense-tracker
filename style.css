@@ -37,29 +37,16 @@ button:hover {
   transform: scale(1.05);
 }
 
-.summary {
-  background: #dcddd8; 
+.summary, .options, .card {
   padding: 15px;
   margin: 15px 0;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.options {
-  background: #e4f1fe; 
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.card {
-  background: #f1faee; 
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+.summary { background: #dcddd8; }
+.options { background: #e4f1fe; }
+.card { background: #f1faee; }
 
 input, select {
   padding: 8px;
@@ -97,9 +84,7 @@ input:focus, select:focus {
   background: #d8f3dc;
 }
 
-#expense-list li span {
-  flex: 1;
-}
+#expense-list li span { flex: 1; }
 
 .actions button {
   font-size: 12px;
@@ -110,4 +95,11 @@ input:focus, select:focus {
 
 .actions button:hover {
   background: #d62828;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
