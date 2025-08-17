@@ -27,4 +27,4 @@ Easily add, update, delete, and filter expenses while getting a clear overview o
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/smart-expense-tracker.git
+git clone https://github.com/riyasagar/smart-expense-tracker.git
