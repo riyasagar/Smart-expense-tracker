@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💸 Smart Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>💸 Smart Expense Tracker</h1>
+
+    <!-- Summary -->
+    <div class="summary">
+      <p>📊 Total Spending: <span id="total">₹0</span></p>
+      <button id="clearAll">🗑 Clear All</button>
+      <button id="exportCSV">⬇️ Export CSV</button>
+    </div>
+
+    <!-- Search & Filter -->
+    <div class="options">
+      <input type="text" id="search" placeholder="🔍 Search expenses..." />
+      <select id="filter">
+        <option value="All">📂 All Categories</option>
+        <option value="Food">🍔 Food</option>
+        <option value="Travel">✈️ Travel</option>
+        <option value="Shopping">🛍 Shopping</option>
+        <option value="Bills">💡 Bills</option>
+        <option value="Other">📝 Other</option>
+      </select>
+    </div>
+
+    <!-- Expense Form -->
+    <div class="card">
+      <h2>➕ Add / ✏️ Update Expense</h2>
+      <form id="expense-form">
+        <input type="hidden" id="editIndex" />
+        <input type="text" id="title" placeholder="📝 Expense Title" required />
+        <input type="number" id="amount" placeholder="💰 Amount (₹)" required />
+        <select id="category" required>
+          <option value="">📂 Select Category</option>
+          <option value="Food">🍔 Food</option>
+          <option value="Travel">✈️ Travel</option>
+          <option value="Shopping">🛍 Shopping</option>
+          <option value="Bills">💡 Bills</option>
+          <option value="Other">📝 Other</option>
+        </select>
+        <input type="date" id="date" required />
+        <button type="submit">💾 Save Expense</button>
+      </form>
+    </div>
+
+    <!-- Expense List -->
+    <div class="card">
+      <h2>📃 Expense List</h2>
+      <ul id="expense-list"></ul>
+    </div>
+
+    <!-- Charts -->
+    <div class="card">
+      <h2>📈 Spending Overview</h2>
+      <canvas id="expenseChart"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
