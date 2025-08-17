@@ -28,3 +28,5 @@ Easily add, update, delete, and filter expenses while getting a clear overview o
 
 ```bash
 git clone https://github.com/riyasagar/smart-expense-tracker.git
+```
+2. Open index.html in your browser.
