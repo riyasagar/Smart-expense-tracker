@@ -58,9 +58,3 @@ A modern, interactive web application to efficiently track, manage, and visualiz
 2. Open index.html in any modern browser.
 3. Start managing your expenses immediately!
 ---
-##🌟 Future Enhancements
-
--Weekly/monthly summaries
--Dark mode toggle
--Cloud sync across devices
--Advanced trend charts for better financial analysis
