@@ -14,52 +14,68 @@
     <!-- Summary -->
     <div class="summary">
       <p>📊 Total Spending: <span id="total">₹0</span></p>
+      <p>🏆 Highest Expense: <span id="highest">₹0</span></p>
+      <p>📉 Average Spending: <span id="average">₹0</span></p>
       <button id="clearAll">🗑 Clear All</button>
       <button id="exportCSV">⬇️ Export CSV</button>
     </div>
 
-    <!-- Search & Filter -->
+    <!-- Search, Filter & Sort -->
     <div class="options">
       <input type="text" id="search" placeholder="🔍 Search expenses..." />
       <select id="filter">
-        <option value="All">📂 All Categories</option>
-        <option value="Food">🍔 Food</option>
-        <option value="Travel">✈️ Travel</option>
-        <option value="Shopping">🛍 Shopping</option>
-        <option value="Bills">💡 Bills</option>
-        <option value="Other">📝 Other</option>
+        <option value="All">All Categories</option>
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Bills">Bills</option>
+        <option value="Other">Other</option>
+      </select>
+      <select id="sort">
+        <option value="date">Sort by Date</option>
+        <option value="amount">Sort by Amount</option>
+        <option value="category">Sort by Category</option>
       </select>
     </div>
 
     <!-- Expense Form -->
     <div class="card">
-      <h2>➕ Add / ✏️ Update Expense</h2>
+      <h2>Add / Update Expense</h2>
       <form id="expense-form">
         <input type="hidden" id="editIndex" />
-        <input type="text" id="title" placeholder="📝 Expense Title" required />
-        <input type="number" id="amount" placeholder="💰 Amount (₹)" required />
+        <input type="text" id="title" placeholder="Expense Title" required />
+        <input type="number" id="amount" placeholder="Amount (₹)" required />
         <select id="category" required>
-          <option value="">📂 Select Category</option>
-          <option value="Food">🍔 Food</option>
-          <option value="Travel">✈️ Travel</option>
-          <option value="Shopping">🛍 Shopping</option>
-          <option value="Bills">💡 Bills</option>
-          <option value="Other">📝 Other</option>
+          <option value="">Select Category</option>
+          <option value="Food">Food</option>
+          <option value="Travel">Travel</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Bills">Bills</option>
+          <option value="Other">Other</option>
+        </select>
+        <select id="payment" required>
+          <option value="">Payment Method</option>
+          <option value="Cash">Cash</option>
+          <option value="Card">Card</option>
+          <option value="UPI">UPI</option>
         </select>
         <input type="date" id="date" required />
-        <button type="submit">💾 Save Expense</button>
+        <label>
+          <input type="checkbox" id="recurring" /> Recurring Monthly
+        </label>
+        <button type="submit">Save Expense</button>
       </form>
     </div>
 
     <!-- Expense List -->
     <div class="card">
-      <h2>📃 Expense List</h2>
+      <h2>Expense List</h2>
       <ul id="expense-list"></ul>
     </div>
 
     <!-- Charts -->
     <div class="card">
-      <h2>📈 Spending Overview</h2>
+      <h2>Spending Overview</h2>
       <canvas id="expenseChart"></canvas>
     </div>
   </div>
