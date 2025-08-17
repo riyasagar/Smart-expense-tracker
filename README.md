@@ -1,4 +1,4 @@
-# 💸 Smart Expense Tracker
+# Smart Expense Tracker
 
 A web-based tool to track, manage, and visualize daily expenses.  
 Easily add, update, delete, and filter expenses while getting a clear overview of your spending patterns through interactive charts.
