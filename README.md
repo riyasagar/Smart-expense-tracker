@@ -6,6 +6,7 @@
 [![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=flat-square&logo=chartdotjs&logoColor=white)](https://www.chartjs.org/)  
 
 A modern, interactive web application to efficiently track, manage, and visualize your daily expenses. Smart Expense Tracker combines simplicity with advanced features like filtering, sorting, recurring expenses, and dynamic charts for complete financial awareness.
+
 ---
 
 ## 🚀 Features
@@ -17,15 +18,18 @@ A modern, interactive web application to efficiently track, manage, and visualiz
 - **Summary stats:** Total, Highest, and Average spending  
 - Export all expenses as **CSV**  
 - Persistent storage with **localStorage**  
+
 ---
 
-##⚙️ Technologies Used
+## ⚙️ Technologies Used
 
--Frontend: HTML5, CSS3, JavaScript (ES6)
--Data Visualization: Chart.js (Pie Charts)
--Storage: Browser localStorage
--Responsive UI: Flexbox, Grid, and modern CSS styling  
+- Frontend: HTML5, CSS3, JavaScript (ES6)  
+- Data Visualization: Chart.js (Pie Charts)  
+- Storage: Browser localStorage  
+- Responsive UI: Flexbox, Grid, and modern CSS styling  
+
 ---
+
 ## 🎯 How It Works
 
 1. **Add Expense:** Fill the form and save. Recurring expenses auto-add next month.  
@@ -35,15 +39,15 @@ A modern, interactive web application to efficiently track, manage, and visualiz
 5. **Export CSV:** Download complete records for offline tracking.  
 
 ---
-##📊 Benefits
 
--Gain better control over your personal finances.
+## 📊 Benefits
 
--Identify spending patterns and high-cost areas.
+- Gain better control over your personal finances  
+- Identify spending patterns and high-cost areas  
+- Plan your budget efficiently with recurring expense tracking  
+- Visualize data for clear and actionable insights  
 
--Plan your budget efficiently with recurring expense tracking.
-
--Visualize data for clear and actionable insights.
+---
 
 ## 📂 Installation
 
@@ -53,10 +57,10 @@ A modern, interactive web application to efficiently track, manage, and visualiz
    ```
 2. Open index.html in any modern browser.
 3. Start managing your expenses immediately!
-
+---
 ##🌟 Future Enhancements
 
 -Weekly/monthly summaries
 -Dark mode toggle
 -Cloud sync across devices
--Advanced trend charts
+-Advanced trend charts for better financial analysis
